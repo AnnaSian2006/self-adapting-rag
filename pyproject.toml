@@ -1,0 +1,27 @@
+[project]
+name = "self-adapting-rag"
+version = "0.1.0"
+description = "A self-adapting RAG system for enterprise knowledge bases"
+requires-python = ">=3.10"
+
+dependencies = [
+    "datasets",           # BeIR data loading
+    "qdrant-client",      # vector store
+    "rank-bm25",          # sparse retrieval
+    "langchain",          # orchestration
+    "langchain-ollama",   # Ollama integration
+    "sqlalchemy",         # PostgreSQL ORM
+    "psycopg2-binary",    # PostgreSQL driver
+    "ragas",              # evaluation
+    "streamlit",          # dashboard
+    "pypdf",              # PDF parsing
+    "python-docx",        # DOCX parsing
+    "beautifulsoup4",     # HTML parsing
+    "python-dotenv",      # env vars
+    "numpy",
+    "pandas",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.backends.legacy:BuildBackend"

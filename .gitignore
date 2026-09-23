@@ -1,0 +1,33 @@
+# environment
+.env
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# data & models
+data/
+*.parquet
+*.arrow
+
+# huggingface cache
+~/.cache/huggingface/
+
+# qdrant storage
+qdrant_storage/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# logs
+*.log
+logs/
